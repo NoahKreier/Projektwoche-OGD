@@ -1,6 +1,7 @@
 function init() {
-
     var docu = document.getElementById('graph');
+
+
 
     var width = docu.clientWidth,
         height = docu.clientHeight,

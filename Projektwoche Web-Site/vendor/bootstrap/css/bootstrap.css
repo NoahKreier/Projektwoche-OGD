@@ -8983,8 +8983,6 @@ a.text-dark:hover, a.text-dark:focus {
 button{
   margin-bottom: 20px;
 }
-#piechart{
-  width:200px;
-  height: 200px;
-
+button{
+'[type="submit"]:not([formnovalidate])'
 }

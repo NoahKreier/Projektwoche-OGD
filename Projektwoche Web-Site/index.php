@@ -64,6 +64,9 @@
                     <a class="nav-link js-scroll-trigger" href="#services">Filter</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#ergebnisse">Ergebnisse</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Impressum</a>
                 </li>
             </ul>
@@ -100,17 +103,17 @@
         <div id="graph"></div>
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <form method="get" action="index.php">
+                <form method="get" action="index.php#ergebnisse">
                     <label>Jahr</label>
-                    <select class="custom-select" name="jahre">
-                        <option value="Bitte Auswählen">Bitte Auswählen</option>
+                    <select class="custom-select" name="jahre" required="required">
+                        <option value="">Bitte Auswählen</option>
                         <option value="2008">2008</option>
                         <option value="2012">2012</option>
                         <option value="2016">2016</option>
                     </select>
                     <label>Gemeinden</label>
-                    <select class="custom-select" name="bezirk">
-                        <option value="Bitte Auswählen">Bitte Auswählen</option>
+                    <select class="custom-select" name="bezirk" required="required">
+                        <option value="">Bitte Auswählen</option>
                         <option value="Aadorf">Aadorf</option>
                         <option value="Affeltrangen">Affeltrangen</option>
                         <option value="Altnau">Altnau</option>
@@ -196,12 +199,17 @@
                     </select>
                     <br>
                     <br>
-                    <button name="submit" class="btn btn-success">Suchen</button>
-                    <br>
-                    <button name="reset" class="btn btn-success">Reset</button>
-                    <br>
+                    <button name="submit" class="btn btn-primary">Suchen</button>
                     <br>
 
+                   <button name="reset" type="submit" class="btn btn-success" formnovalidate>Reset</button>
+
+
+
+
+                    <section id="ergebnisse" class="bg-light">
+                        <div class="container">
+                            <h2>Ergebnisse</h2>
 
                     <?php
 
